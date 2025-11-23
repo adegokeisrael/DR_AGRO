@@ -69,6 +69,7 @@ The results highlight the plasticity of the SigLIP architecture. By using a low 
 **Limitations:**
 1.  **Lighting Conditions:** The model performance drops slightly (approx -5% R@1) on images taken in low-light field conditions.
 2.  **Class Imbalance:** Rare diseases with fewer than 50 image samples showed lower retrieval scores compared to common diseases like *Corn Rust*.
+3.  **Leafs ONLY for now** Our current Implimanetation will do well to support leafs crop instead of fruits due to the data type we have in our knowledge base
 
 ---
 
