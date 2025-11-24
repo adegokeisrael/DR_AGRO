@@ -81,5 +81,5 @@ The results highlight the plasticity of the SigLIP architecture. By using a low 
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/yourusername/agri-siglip-finetune.git](https://github.com/yourusername/agri-siglip-finetune.git)
+git clone [https://github.com/adegokeisrael/agri-siglip-finetune.git](https://github.com/adegokeisrael/agri-siglip-finetune.git)
 cd agri-siglip-finetune
