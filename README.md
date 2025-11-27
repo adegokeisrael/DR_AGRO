@@ -44,30 +44,13 @@ As the sole executor of this project, my role encompassed the entire MLOps pipel
 
 ---
 
-## 📊 Quantitative Results
-
-The fine-tuned model demonstrated a robust ability to align agricultural images with their specific scientific descriptions.
-
-### Image-Text Retrieval Metrics
-*Evaluated on a held-out test set of 1,000 unique agricultural pairs.*
-
-| Metric | Pre-Trained SigLIP (Baseline) | **Agri-SigLIP (Fine-Tuned)** | **Improvement** |
-| :--- | :---: | :---: | :---: |
-| **Recall@1** | 48.2% | **80.5%** | +32.3% |
-| **Recall@5** | 71.0% | **94.2%** | +23.2% |
-| **Recall@10**| 82.4% | **98.1%** | +15.7% |
-| **Inference Latency** | 45ms | **45ms** | *No change* |
-
-> **Key Insight:** The massive jump in R@1 indicates the model moved from "guessing the general category" to "identifying the exact disease" with high precision.
-
----
 
 ## 💬 Discussion
 
 The results highlight the plasticity of the SigLIP architecture. By using a low learning rate (`5e-6`), we avoided "catastrophic forgetting" of basic visual features (like edges and colors) while successfully injecting domain knowledge.
 
 **Limitations:**
-1.  **Lighting Conditions:** The model performance drops slightly (approx -5% R@1) on images taken in low-light field conditions.
+1.  **Lighting Conditions:** The model performance relatively better on images taken in considerable -light field conditions not at night.
 2.  **Class Imbalance:** Rare diseases with fewer than 50 image samples showed lower retrieval scores compared to common diseases like *Corn Rust*.
 3.  **Leafs ONLY for now** Our current Implimanetation will do well to support leafs crop instead of fruits due to the data type we have in our knowledge base
 
