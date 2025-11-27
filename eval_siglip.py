@@ -10,7 +10,7 @@ import numpy as np
 # ==========================================
 # 1. CONFIGURATION
 # ==========================================
-MODEL_PATH = "./siglip-agric-finetuned" # Path to your saved model
+MODEL_PATH = "./siglip-agric-finetuned" # Path to your saved model now
 TEST_DATA_FILE = "path/to/your/test_dataset.csv" # Separate test set
 BATCH_SIZE = 16
 

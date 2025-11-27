@@ -8,6 +8,6 @@ torchvision>=0.15.0
 transformers>=4.36.0
 datasets>=2.14.0
 accelerate>=0.25.0
-pandas
 numpy
+pandas
 tqdm
